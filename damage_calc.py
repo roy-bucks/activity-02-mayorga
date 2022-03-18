@@ -9,10 +9,12 @@ modifiers = {
     "critical": 1, 
     "random": random.uniform(0.85, 1),
     "stab": 1.5, 
-    "type": 1, 
+    "type": random.uniform(0.25, 0.50),
+    "burn": 1,
+    'other': 1,
 }
 
-# sum of all modifiers
+# product of all modifiers
 sumMod = 1
 for x in modifiers: 
     sumMod *= modifiers[x]
